@@ -1,0 +1,132 @@
+Network Basics
+### 1. **Network Architecture**
+
+Network architecture refers to the design of a computer network. It defines the hardware, software, protocols, and overall structure of the network, including its components and their functions. When learning about network architecture, it's important to understand the layout of the network (physical and logical), the devices involved (routers, switches, etc.), and the communication methods (e.g., wired, wireless, protocols).
+
+**Key concepts to explore:**
+   - **Types of Networks**: Local Area Network (LAN), Wide Area Network (WAN), Metropolitan Area Network (MAN).
+   - **Devices**: Routers, switches, firewalls, hubs.
+   - **Protocols**: TCP/IP, HTTP, FTP, etc.
+   
+   **Useful Link**: [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) — This is a simulation tool that allows you to design network setups and experiment with various devices and protocols in a virtual environment.
+
+---
+
+### 2. **Types of Network Topology**
+
+Network topology refers to the physical or logical arrangement of the devices in a network. The structure of the network impacts its performance, scalability, and reliability.
+
+**Common Types of Network Topology:**
+   - **Bus Topology**: All devices are connected to a single central cable (the bus). It's simple but has limitations.
+   - **Star Topology**: All devices are connected to a central hub or switch. If the hub fails, the network is disrupted.
+   - **Ring Topology**: Devices are connected in a circular loop. Data travels in one direction.
+   - **Mesh Topology**: Every device is connected to every other device. It’s highly redundant and reliable but can be costly.
+   - **Hybrid Topology**: A combination of two or more topologies.
+
+**Useful Link**: [GeeksforGeeks on Network Topology](https://www.geeksforgeeks.org/types-of-network-topology/)
+
+---
+
+### 3. **OSI Model**
+
+The **Open Systems Interconnection (OSI) Model** is a conceptual framework used to understand network interactions in seven layers:
+
+   1. **Physical Layer**: Deals with the hardware and transmission medium (cables, switches).
+   2. **Data Link Layer**: Ensures reliable communication over the physical layer (Ethernet, MAC addresses).
+   3. **Network Layer**: Manages routing and forwarding (IP addresses, routers).
+   4. **Transport Layer**: Provides reliable data transfer (TCP, UDP).
+   5. **Session Layer**: Manages sessions or connections between applications.
+   6. **Presentation Layer**: Translates data formats (encryption, compression).
+   7. **Application Layer**: Interacts with the end-user software (HTTP, FTP).
+
+**Useful Link**: [Cloudflare - OSI Model](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
+
+---
+
+### 4. **MITM (Man-in-the-Middle) Attack**
+
+A **Man-in-the-Middle (MITM) attack** occurs when a malicious actor intercepts communication between two parties. This allows the attacker to eavesdrop, alter, or impersonate the communication. MITM attacks can compromise confidentiality, integrity, and authenticity of data.
+
+**Common MITM attacks include:**
+   - **Packet sniffing**: Capturing data packets traveling across the network.
+   - **SSL stripping**: Downgrading HTTPS traffic to HTTP to intercept encrypted data.
+   - **Session hijacking**: Taking over an active session between two devices.
+
+**Prevention techniques:**
+   - Using end-to-end encryption (TLS/SSL).
+   - Verifying digital certificates.
+   - Utilizing VPNs.
+
+---
+
+### 5. **NIDS (Network Intrusion Detection System)**
+
+A **Network Intrusion Detection System (NIDS)** monitors network traffic for suspicious activity or known threats. It helps identify and respond to potential intrusions in real-time.
+
+Two popular open-source NIDS tools are:
+   - **Snort**: An open-source NIDS that performs real-time traffic analysis and packet logging. It is highly customizable and detects a wide range of attack signatures.
+   - **Suricata**: Another open-source NIDS that supports multi-threading for high-performance environments. It can detect network-based threats and supports additional features like intrusion prevention and logging.
+
+---
+
+### 6. **Protocols**
+
+Protocols define the rules and conventions for communication between devices in a network. Common network protocols include:
+
+   - **TCP (Transmission Control Protocol)**: Ensures reliable, ordered data transmission.
+   - **UDP (User Datagram Protocol)**: Provides fast, connectionless communication, though not reliable.
+   - **HTTP/HTTPS**: Protocols used for web communication (HyperText Transfer Protocol / Secure).
+   - **FTP (File Transfer Protocol)**: Used for transferring files between systems.
+
+**Useful Link**: [List of TCP/UDP Port Numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+
+---
+
+### 7. **TCP/IP Model**
+
+The **TCP/IP Model** is a simplified model for network communication. It’s the foundational suite for Internet protocols, composed of four layers:
+
+   1. **Link Layer**: Includes the physical and data link layers from the OSI model (Ethernet, Wi-Fi).
+   2. **Internet Layer**: Responsible for routing (IP, ICMP).
+   3. **Transport Layer**: Includes TCP and UDP for end-to-end communication.
+   4. **Application Layer**: Hosts protocols like HTTP, FTP, DNS, and email services.
+
+This model is the backbone of the internet and modern networking.
+
+---
+
+### 8. **pfsense Firewall**
+
+**pfsense** is an open-source firewall and router software based on FreeBSD. It is widely used for network security, offering a powerful web interface for configuration. pfsense supports features like:
+
+   - **Traffic filtering** (firewall rules)
+   - **VPN support** (IPsec, OpenVPN)
+   - **Traffic shaping**
+   - **Intrusion detection/prevention**
+
+It is a popular choice for securing both small and large-scale networks.
+
+---
+
+### 9. **Packet Analyzers: Wireshark and TCPdump**
+
+**Packet analyzers** capture and inspect data packets traveling across a network. They help in diagnosing network issues, analyzing traffic patterns, and detecting suspicious activity.
+
+   - **Wireshark**: A widely-used, graphical packet analyzer. It can capture, display, and analyze network traffic in real-time.
+   - **TCPdump**: A command-line packet analyzer. It is lightweight and useful for quick analysis.
+
+Both tools help network professionals troubleshoot and ensure network security.
+
+---
+
+### 10. **Using AI to Create IDS Software**
+
+Artificial Intelligence (AI) can be integrated into **Intrusion Detection Systems (IDS)** to improve their ability to identify anomalies and potential threats in real-time. AI-powered IDS can analyze vast amounts of network data and learn from patterns to detect novel and sophisticated attacks, such as:
+
+   - **Machine Learning**: AI can analyze historical data to detect abnormal behavior and predict potential attacks.
+   - **Behavioral Analysis**: AI models can track normal network behavior and flag deviations as potential security risks.
+   - **Automation**: AI can automatically respond to detected threats without human intervention.
+
+This approach provides more advanced threat detection capabilities compared to traditional signature-based IDS systems.
+
+---
